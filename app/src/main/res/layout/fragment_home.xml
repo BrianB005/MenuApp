@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkGreen"
+    tools:context=".HomeFragment"
+    tools:ignore="HardCodedText"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="30dp"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/lightGreen"
+            android:elevation="@dimen/cardview_default_elevation"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/weeklymenu"
+                android:scaleType="centerCrop"
+                android:contentDescription="logo"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday 10:55:00"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:id="@+id/current_time"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's menu"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/day"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/breakfast"
+                android:text="Coffee +sweet potatoes "
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#3C3C3C"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lunch"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+
+                android:layout_marginBottom="6dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rice + beans + avocado"
+                android:textSize="20sp"
+                android:id="@+id/lunch"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#3C3C3C"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supper"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/supper"
+                android:text="Rice + beans + cabbage"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#3C3C3C"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="40dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/editMenu"
+        android:contentDescription="Edit menu"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+
+</FrameLayout>
